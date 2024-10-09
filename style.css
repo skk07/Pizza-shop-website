@@ -1,0 +1,176 @@
+/* navbar */
+a
+{
+    text-decoration: none;
+}
+.nav-link
+{
+    color: white;
+    font-size: 18px;
+}
+.active
+{
+    color: #fac564;
+}
+a:hover
+{
+    color: #fac564 !important;
+}
+
+/*  Carousel  */
+.carousel .carousel-indicators button
+{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px double white;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    margin: 5px;
+}
+.btn1
+{
+    background-color:#fac564 ;
+    color: black;
+}
+.btn1:hover
+{
+    border: 2px solid #fac564;
+    color: #fac564;
+    background-color: transparent;
+}
+.btn2
+{
+    border: 2px solid white;
+    color: white;
+}
+.btn2:hover
+{
+    background-color:#fac564 ;
+    color: black;
+}
+
+/* services */
+.icn:hover
+{
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+/* menu pricing */
+.und
+{
+    border-bottom: dashed 1px #fac564;
+}
+
+/* image */
+.mag
+{
+    background-color: #fac564;
+    display: none;
+    animation-name: anim ;
+    animation-duration: 0.6s;
+}
+.d-flex .m:hover .mag
+{
+    display: block;
+}
+@keyframes anim 
+{
+    0%{transform: rotate(45deg);}
+    100%{transform: rotate(0deg);}    
+}
+
+/* reviews */
+.bgimg
+{
+    background-image: url(images/bg_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* review section img rotation */
+
+.icon-border{
+    position: relative;
+    display: inline-block;
+}
+
+.icon-border::before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  height:100px;
+  width:100px;
+  align-items:center;
+  border: 1px solid #fac564; /* Border color */
+  transition: transform 0.3s ease; /* Smooth rotation on hover */
+  z-index: 1;
+  left: -10px;
+  /* width: calc(100% + 20px);
+  height: calc(100% + 20px); */
+}
+.icon-border:hover::before{
+  top: -10px;
+  height:100px;
+  width:100px;
+  transform: rotate(135deg); /* Rotate the border */
+  background-color:#fac564;
+  left: -10px;
+  /* width: calc(100% + 20px);
+  height: calc(100% + 20px); */
+}
+.round-img{
+    filter: invert(95%) sepia(57%) saturate(2069%) hue-rotate(311deg) brightness(103%) contrast(96%);
+    transform: none;
+    display: block;
+    position: relative;
+    z-index: 1;
+    
+}
+.icon-border:hover .round-img{
+    filter: invert(0%) sepia(72%) saturate(29%) hue-rotate(129deg) brightness(73%) contrast(87%);
+    transform:none;
+}
+
+/* menu */
+.nav-pills .nav-item .nav-link
+{
+    border: 2px solid #fac564;
+    color: #fac564;
+}
+.nav-pills .nav-item .active
+{
+    background-color: #fac564;
+    color: black;
+}
+.nav-pills .nav-item :hover
+{
+    background-color: #fac564;
+    color: black;
+}
+/* Contact Us */
+.cont ::placeholder {
+    color: white;
+}
+
+.cont input[type=text]
+{
+    border-bottom: 1px solid gray !important; 
+    border-radius: 0px;
+}
+
+.cont textarea
+{
+    border-bottom: 1px solid gray !important; 
+    border-radius: 0px;
+}
+
+.cont input[type=email]
+{
+    border-bottom: 1px solid gray !important; 
+    border-radius: 0px;
+    background-image: url();
+}
